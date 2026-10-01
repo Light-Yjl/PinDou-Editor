@@ -1,0 +1,49 @@
+{
+  "name": "pindou-studio-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PinDou Studio - Perler bead pattern generator with AI background removal",
+  "author": "Huiteng Zhuang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhuangHT-1201/pindou-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZhuangHT-1201/pindou-studio/issues"
+  },
+  "keywords": [
+    "perler-beads",
+    "pindou",
+    "拼豆",
+    "pattern-generator",
+    "background-removal",
+    "electron"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -p tsconfig.app.json && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "oxlint",
+    "predev": "node sync-resources.mjs",
+    "prebuild": "node sync-resources.mjs",
+    "test": "node verify.cjs"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "1.7.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "onnxruntime-web": "1.21.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.2",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "oxlint": "1.73.0",
+    "tailwindcss": "4.3.2",
+    "typescript": "6.0.3",
+    "vite": "6.4.3"
+  }
+}
